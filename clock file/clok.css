@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: darkslategrey;
+    font-family: sans-serif;
+    font-size: 1.7rem;
+
+}
+.display{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*clock stylin*/
+.clock{
+    width: 420px;
+    height: 420px;
+    background-color: darkcyan;
+    border-radius: 50%;
+    border: 10px solid grey;
+    position: relative;
+}
+.clock .number{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform: rotate(0deg);
+
+}
+.clock #n1{
+
+    transform: rotate(30deg);
+}
+.clock #n2{
+    
+    transform: rotate(60deg);
+}
+.clock #n3{
+    
+    transform: rotate(90deg);
+}
+.clock #n4{
+    
+    transform: rotate(120deg);
+}
+.clock #n5{
+    
+    transform: rotate(150deg);
+}
+.clock #n6{
+    
+    transform: rotate(180deg);
+}
+.clock #n7{
+    
+    transform: rotate(210deg);
+}
+.clock #n8{
+    
+    transform: rotate(240deg);
+}
+.clock #n9{
+    
+    transform: rotate(270deg);
+}
+.clock #n10{
+    
+    transform: rotate(300deg);
+}
+.clock #n11{
+    
+    transform: rotate(330deg);
+}
+.clock .element{
+    --wareeg:0;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%)rotate(calc(--wareeg)*1deg);
+    border: 1px solid white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    z-index: 10;
+    transform-origin: bottom;
+}
+
+.clock .element#seconds{
+    width: 4px;
+    height: 45%;
+    background-color: bisque;
+}
+.clock .element#minutes{
+    width: 7px;
+    height: 40%;
+    background-color: black;
+}
+.clock .element#hour{
+    width: 10px;
+    height: 35%;
+    background-color:gray;
+}
+.clock .element#centre{
+    position: absolute;
+    height: 20px;
+    width: 22px;
+    background-color: yellowgreen;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    z-index: 11;
+    transform: translate(-50%, -50%);
+
+}
+.switch-btns{
+   margin-top: -200px;
+    width: 100px;
+    height: 200px;
+    display: grid;
+    margin-left: 8px;
+  
+
+}
+.button{
+    font-size: 1.2rem;
+    color: black;
+    margin: 3px;
+    border-radius: 15%;
+    cursor: pointer;
+    border: 1px solid white;
+}
+.button#button1{
+    background-color: gray;
+}
+.button#button2{
+    background-color: olivedrab;
+}
+.button#button3{
+    background-color: rosybrown;
+}
+.button#button4{
+    background-color: burlywood;
+}
